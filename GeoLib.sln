@@ -3,7 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoLib.Core", "GeoLib\GeoLib.Core.csproj", "{638D7BCD-304B-4CCF-B1D7-BBF6B5259E15}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoLib.Core", "GeoLib.Core\GeoLib.Core.csproj", "{638D7BCD-304B-4CCF-B1D7-BBF6B5259E15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoLib.Contracts", "GeoLib.Contracts\GeoLib.Contracts.csproj", "{4DA5D0B1-7F31-4F07-82FE-47693299E77D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoLib.Data", "GeoLib.Data\GeoLib.Data.csproj", "{C92660D5-5244-4868-A597-CEE9FFD1A902}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoLib.Services", "GeoLib.Services\GeoLib.Services.csproj", "{71CE0820-92BE-4622-83F0-3951A8C3D373}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoLib.Tests", "GeoLib.Tests\GeoLib.Tests.csproj", "{4EB3FA14-AD5F-4595-893E-410367A2B231}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +23,22 @@ Global
 		{638D7BCD-304B-4CCF-B1D7-BBF6B5259E15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{638D7BCD-304B-4CCF-B1D7-BBF6B5259E15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{638D7BCD-304B-4CCF-B1D7-BBF6B5259E15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DA5D0B1-7F31-4F07-82FE-47693299E77D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DA5D0B1-7F31-4F07-82FE-47693299E77D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DA5D0B1-7F31-4F07-82FE-47693299E77D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DA5D0B1-7F31-4F07-82FE-47693299E77D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C92660D5-5244-4868-A597-CEE9FFD1A902}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C92660D5-5244-4868-A597-CEE9FFD1A902}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C92660D5-5244-4868-A597-CEE9FFD1A902}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C92660D5-5244-4868-A597-CEE9FFD1A902}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71CE0820-92BE-4622-83F0-3951A8C3D373}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71CE0820-92BE-4622-83F0-3951A8C3D373}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71CE0820-92BE-4622-83F0-3951A8C3D373}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71CE0820-92BE-4622-83F0-3951A8C3D373}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EB3FA14-AD5F-4595-893E-410367A2B231}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EB3FA14-AD5F-4595-893E-410367A2B231}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EB3FA14-AD5F-4595-893E-410367A2B231}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EB3FA14-AD5F-4595-893E-410367A2B231}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
