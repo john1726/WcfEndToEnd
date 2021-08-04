@@ -1,5 +1,5 @@
 ﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 using GeoLib.Services;
 using GeoLib.Contracts;
 using System.Collections.Generic;
@@ -9,10 +9,10 @@ using GeoLib.Data;
 
 namespace GeoLib.Tests
 {
-    [TestClass]
+    [TestFixture]
     public class ManagerTests
     {
-        [TestMethod]
+        [Test]
         public void test_zip_code_retrieval()
         {
             Mock<IZipCodeRepository> mockZipCodeRepository = new Mock<IZipCodeRepository>();
