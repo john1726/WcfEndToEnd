@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31424.327
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1433
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoLib.Core", "GeoLib.Core\GeoLib.Core.csproj", "{638D7BCD-304B-4CCF-B1D7-BBF6B5259E15}"
 EndProject
@@ -11,7 +11,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoLib.Data", "GeoLib.Data\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoLib.Services", "GeoLib.Services\GeoLib.Services.csproj", "{71CE0820-92BE-4622-83F0-3951A8C3D373}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoLib.Tests", "GeoLib.Tests\GeoLib.Tests.csproj", "{4EB3FA14-AD5F-4595-893E-410367A2B231}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoLib.Tests", "GeoLib.Tests\GeoLib.Tests.csproj", "{57C0CD94-8066-4738-8B81-58FF9E18BFDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoLib.ConsoleHost", "GeoLib.ConsoleHost\GeoLib.ConsoleHost.csproj", "{BD603198-2149-495A-8B6E-20C98B677AE8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +37,14 @@ Global
 		{71CE0820-92BE-4622-83F0-3951A8C3D373}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71CE0820-92BE-4622-83F0-3951A8C3D373}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71CE0820-92BE-4622-83F0-3951A8C3D373}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4EB3FA14-AD5F-4595-893E-410367A2B231}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4EB3FA14-AD5F-4595-893E-410367A2B231}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4EB3FA14-AD5F-4595-893E-410367A2B231}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4EB3FA14-AD5F-4595-893E-410367A2B231}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57C0CD94-8066-4738-8B81-58FF9E18BFDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57C0CD94-8066-4738-8B81-58FF9E18BFDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57C0CD94-8066-4738-8B81-58FF9E18BFDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57C0CD94-8066-4738-8B81-58FF9E18BFDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD603198-2149-495A-8B6E-20C98B677AE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD603198-2149-495A-8B6E-20C98B677AE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD603198-2149-495A-8B6E-20C98B677AE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD603198-2149-495A-8B6E-20C98B677AE8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
