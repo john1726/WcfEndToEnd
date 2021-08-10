@@ -53,21 +53,32 @@
     <Compile Include="Entities\State.cs" />
     <Compile Include="Entities\ZipCode.cs" />
     <Compile Include="GeoLibDbContext.cs" />
+    <Compile Include="Migrations\201905092329551_InitialModel.cs" />
+    <Compile Include="Migrations\201905092329551_InitialModel.Designer.cs">
+      <DependentUpon>201905092329551_InitialModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositories\StateRepository.cs" />
-    <Compile Include="Repositories\ZipCodeRepository.cs" />
     <Compile Include="Repository Interfaces\IStateRepository.cs" />
     <Compile Include="Repository Interfaces\IZipCodeRepository.cs" />
+    <Compile Include="Repositories\StateRepository.cs" />
+    <Compile Include="Repositories\ZipCodeRepository.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GeoLib.Core\GeoLib.Core.csproj">
-      <Project>{638d7bcd-304b-4ccf-b1d7-bbf6b5259e15}</Project>
-      <Name>GeoLib.Core</Name>
-    </ProjectReference>
+    <EmbeddedResource Include="Migrations\201905092329551_InitialModel.resx">
+      <DependentUpon>201905092329551_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>  
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+      <ProjectReference Include="..\GeoLib.Core\GeoLib.Core.csproj">
+      <Project>{638d7bcd-304b-4ccf-b1d7-bbf6b5259e15}</Project>
+      <Name>GeoLib.Core</Name>
+    </ProjectReference>
+  </ItemGroup>    
+
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
