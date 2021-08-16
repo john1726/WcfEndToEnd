@@ -5,7 +5,7 @@ using System.ServiceModel;
 
 namespace GeoLib.Contracts
 {
-    [ServiceContract]
+    [ServiceContract(Namespace = "http://localhost/WcfEndToEnd")]
     public interface IGeoService
     {
         [OperationContract]

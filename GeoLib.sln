@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31424.327
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1433
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoLib.Core", "GeoLib.Core\GeoLib.Core.csproj", "{638D7BCD-304B-4CCF-B1D7-BBF6B5259E15}"
 EndProject
@@ -18,6 +18,12 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hosting", "Hosting", "{BF794B01-87D9-4DC4-979E-32F9C49F1DB2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoLib.WebHost", "GeoLib.WebHost\GeoLib.WebHost.csproj", "{921F914C-47B2-46A9-BC29-E35DA0A6F59B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoLib.Proxies", "GeoLib.Proxies\GeoLib.Proxies.csproj", "{C8C984A8-3A38-4DA7-894F-92C7ED9E0B3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoLib.Client", "GeoLib.Client\GeoLib.Client.csproj", "{808654B0-2C7A-4239-B74D-BBC73C23FFDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoLib.WindowsHost", "GeoLib.WindowsHost\GeoLib.WindowsHost.csproj", "{1F457FFD-1166-464A-A678-19A3A1D993E8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +59,18 @@ Global
 		{921F914C-47B2-46A9-BC29-E35DA0A6F59B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{921F914C-47B2-46A9-BC29-E35DA0A6F59B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{921F914C-47B2-46A9-BC29-E35DA0A6F59B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8C984A8-3A38-4DA7-894F-92C7ED9E0B3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8C984A8-3A38-4DA7-894F-92C7ED9E0B3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8C984A8-3A38-4DA7-894F-92C7ED9E0B3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8C984A8-3A38-4DA7-894F-92C7ED9E0B3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{808654B0-2C7A-4239-B74D-BBC73C23FFDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{808654B0-2C7A-4239-B74D-BBC73C23FFDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{808654B0-2C7A-4239-B74D-BBC73C23FFDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{808654B0-2C7A-4239-B74D-BBC73C23FFDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F457FFD-1166-464A-A678-19A3A1D993E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F457FFD-1166-464A-A678-19A3A1D993E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F457FFD-1166-464A-A678-19A3A1D993E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F457FFD-1166-464A-A678-19A3A1D993E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,6 +78,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{BD603198-2149-495A-8B6E-20C98B677AE8} = {BF794B01-87D9-4DC4-979E-32F9C49F1DB2}
 		{921F914C-47B2-46A9-BC29-E35DA0A6F59B} = {BF794B01-87D9-4DC4-979E-32F9C49F1DB2}
+		{1F457FFD-1166-464A-A678-19A3A1D993E8} = {BF794B01-87D9-4DC4-979E-32F9C49F1DB2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {ADD2B0E6-66A4-4B34-93CF-A5A0CEC21505}

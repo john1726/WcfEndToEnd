@@ -17,6 +17,7 @@ namespace GeoLib.ConsoleHost
         {
             ServiceHost hostGeoManager = new ServiceHost(typeof(GeoManager));
 
+            //Can perform configuration in C# instead of in the app.conf/web.config 
             // Add endpoint configuration details procedurally here or in app.config
             //string address = "net.tcp://localhost:8009/GeoService";
             //Binding binding = new NetTcpBinding();
