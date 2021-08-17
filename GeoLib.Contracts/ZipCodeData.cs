@@ -5,7 +5,8 @@ using System.Runtime.Serialization;
 
 namespace GeoLib.Contracts
 {
-    [DataContract(Namespace = "http://localhost/WcfEndToEnd")]
+    [DataContract(Namespace = "http://localhost/")]
+    //[DataContract(Namespace = "http://localhost:57394/")]
     public class ZipCodeData
     {
         [DataMember]

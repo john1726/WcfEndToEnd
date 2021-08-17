@@ -27,8 +27,9 @@ namespace GeoLib.Client
         {
             if (txtZipCode.Text != "")
             {
-                GeoClient proxy = new GeoClient("tcpEP");
-
+                //GeoClient proxy = new GeoClient("tcpEP");
+                GeoClient proxy = new GeoClient("webEP");
+                
                 ZipCodeData data = proxy.GetZipInfo(txtZipCode.Text);
                 if (data != null)
                 {
@@ -44,8 +45,9 @@ namespace GeoLib.Client
         {
             if (txtState.Text != null)
             {
-                EndpointAddress address = new EndpointAddress("net.tcp://localhost:8009/GeoService");
-                Binding binding = new NetTcpBinding();
+                EndpointAddress address = new EndpointAddress("http://localhost:57394/GeoService.svc");
+                //Binding binding = new NetTcpBinding();
+                Binding binding = new WSHttpBinding();
 
                 GeoClient proxy = new GeoClient(binding, address);
                 IEnumerable<ZipCodeData> data = proxy.GetZips(txtState.Text);
@@ -58,7 +60,7 @@ namespace GeoLib.Client
 
         private void btnMakeCall_Click(object sender, RoutedEventArgs e)
         {
-            EndpointAddress address = new EndpointAddress("net.tcp://localhost:8010/MessageService");
+            EndpointAddress address = new EndpointAddress("http://localhost:8010/MessageService");
             Binding binding = new NetTcpBinding();
 
             ChannelFactory<IMessageService> factory = new ChannelFactory<IMessageService>(binding, address);

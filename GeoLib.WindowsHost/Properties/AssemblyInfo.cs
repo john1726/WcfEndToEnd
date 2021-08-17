@@ -13,7 +13,7 @@ using System.Windows;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("GeoLib.WindowsHost")]
-[assembly: AssemblyCopyright("Copyright ©  2014")]
+[assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -55,5 +55,5 @@ using System.Windows;
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
 
-[assembly: ContractNamespace("http://www.pluralsight.com/MiguelCastro/WcfEndToEnd",
+[assembly: ContractNamespace("http://localhost/",
                               ClrNamespace = "GeoLib.WindowsHost.Contracts")]
