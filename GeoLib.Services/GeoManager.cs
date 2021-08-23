@@ -113,5 +113,28 @@ namespace GeoLib.Services
 
             return zipCodeData;
         }
+
+        public IEnumerable<ZipCodeData> GetZips()
+        {
+            List<ZipCodeData> zipCodeData = new List<ZipCodeData>();
+
+            IZipCodeRepository zipCodeRepository = _ZipCodeRepository ?? new ZipCodeRepository();
+
+            var zips = zipCodeRepository.GetZips();
+            if (zips != null)
+            {
+                foreach (ZipCode zipCode in zips)
+                {
+                    zipCodeData.Add(new ZipCodeData()
+                    {
+                        City = zipCode.City,
+                        State = zipCode.State.Abbreviation,
+                        ZipCode = zipCode.Zip
+                    });
+                }
+            }
+
+            return zipCodeData;
+        }
     }
 }

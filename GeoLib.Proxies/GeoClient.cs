@@ -38,5 +38,10 @@ namespace GeoLib.Proxies
         {
             return Channel.GetZips(zip, range);
         }
+
+        public IEnumerable<ZipCodeData> GetZips()
+        {
+            return Channel.GetZips();
+        }
     }
 }

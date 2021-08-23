@@ -45,16 +45,32 @@ namespace GeoLib.Client
         {
             if (txtState.Text != null)
             {
+                // 1) Use config settings in C#:
+                ////EndpointAddress address = new EndpointAddress("net.tcp://localhost:8009/GeoService");
+                ////Binding binding = new NetTcpBinding();
                 EndpointAddress address = new EndpointAddress("http://localhost:57394/GeoService.svc");
-                //Binding binding = new NetTcpBinding();
                 Binding binding = new WSHttpBinding();
 
                 GeoClient proxy = new GeoClient(binding, address);
-                IEnumerable<ZipCodeData> data = proxy.GetZips(txtState.Text);
+                IEnumerable<ZipCodeData> data = proxy.GetZips();//proxy.GetZips(txtState.Text);
                 if (data != null)
                     lstZips.ItemsSource = data;
 
                 proxy.Close();
+
+                // OR
+
+                // 2) Use config settings in app.config:
+                //GeoClient proxy = new GeoClient("tcpEP");
+                //GeoClient proxy = new GeoClient("webEP");
+
+                //IEnumerable<ZipCodeData> data = proxy.GetZips(txtState.Text);
+                //if (data != null)
+                //{
+                //    lstZips.ItemsSource = data;
+                //}
+
+                //proxy.Close();
             }
         }
 

@@ -62,5 +62,15 @@ namespace GeoLib.Data
                     .ToFullyLoaded();
             }
         }
+
+        public IEnumerable<ZipCode> GetZips()
+        {
+            using (GeoLibDbContext entityContext = new GeoLibDbContext())
+            {
+                return entityContext.ZipCodeSet
+                    .Include(e => e.State)
+                    .ToFullyLoaded();
+            }
+        }
     }
 }
